@@ -197,6 +197,11 @@
             text-align: center;
         }
 
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
@@ -206,8 +211,21 @@
         .hero p {
             font-size: 1.25rem;
             color: var(--text-secondary);
-            max-width: 600px;
             margin: 0 auto 2rem;
+        }
+
+        .hero-image {
+            max-width: 600px;
+            margin: 2rem auto 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px var(--shadow);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         /* Info Cards (Evidenza) */
@@ -218,8 +236,22 @@
         .info-section h2 {
             text-align: center;
             font-size: 2.5rem;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             color: var(--accent-primary);
+        }
+
+        .info-image {
+            max-width: 500px;
+            margin: 0 auto 3rem;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        .info-image img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .info-grid {
@@ -375,8 +407,13 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <h1>Benvenuti nel Cerchio</h1>
-                <p>Portale dei genitori della Seconda Elementare<br>Anno Scolastico 2024/2025</p>
+                <div class="hero-content">
+                    <h1>Benvenuti nel Cerchio</h1>
+                    <p>Portale dei genitori della Seconda Elementare<br>Anno Scolastico 2024/2025</p>
+                </div>
+                <div class="hero-image">
+                    <img src="cerchio-community.png" alt="Comunità genitori Cerchio">
+                </div>
             </div>
         </section>
 
@@ -384,6 +421,9 @@
         <section class="info-section" id="info">
             <div class="container">
                 <h2>Informazioni Principali</h2>
+                <div class="info-image">
+                    <img src="cerchio-scuola.png" alt="Seconda Elementare">
+                </div>
                 <div class="info-grid">
                     <div class="info-card">
                         <h3>Classe</h3>
